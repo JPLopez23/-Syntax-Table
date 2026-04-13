@@ -4,17 +4,6 @@
 
 Implementación en Python de los algoritmos FIRST, FOLLOW y construcción de tabla de análisis sintáctico predictivo LL(1) para gramáticas libres de contexto.
 
-## Estructura del proyecto
-
-```
-parser/
-├── grammar.py        # Representación de gramáticas
-├── grammar_parser.py # Parser de texto a gramáticas
-├── first_follow.py   # Cálculo de FIRST y FOLLOW
-├── parsing_table.py  # Construcción de la tabla LL(1)
-└── main.py           # Programa principal / CLI
-```
-
 ## Uso
 
 ```bash
@@ -69,7 +58,7 @@ L' → , E L' | ε
 E → id | num
 ```
 **¿Es LL(1)?** Sí — no hay conflictos.  
-Esta gramática representa un patrón muy común (listas de argumentos, CSV, etc.) y se eligió para mostrar que el algoritmo maneja correctamente múltiples terminales en FIRST(E).
+Esta gramática representa un patrón muy común y se eligió para mostrar que el algoritmo maneja correctamente múltiples terminales en FIRST(E).
 
 ## Algoritmos implementados
 
